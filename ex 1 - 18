@@ -1,0 +1,363 @@
+package tp01ex01.java;
+import java.util.Scanner;
+public class TP01Ex01Java {
+    public static void main(String[] args) {
+        /*Luiz carlos mendes e Ketheleen Cristine*/
+        /*  1.Entrar via teclado com a base e a altura de um retângulo,
+            calcular e exibir sua área. */  
+        Scanner ler = new Scanner(System.in);
+        float base;
+        float altura;	
+        float area;
+        System.out.print("informar o valor da base: ");
+        base = ler.nextFloat();
+        System.out.print("informar o valor da altura: ");
+        altura= ler.nextFloat();
+        area = base * altura;
+	System.out.println("o valor da area é: " + area);
+        
+
+    }
+    
+}
+package tp01ex02java;
+import java.util.Scanner;
+
+public class TP01Ex02Java {
+
+    public static void main(String[] args) {
+         /*Luiz carlos mendes e Ketheleen Cristine*/
+        /*2.Calcular e exibir a área de um quadrado, 
+        a partir do valor de sua aresta que será digitado.*/ 
+        Scanner ler = new Scanner(System.in);
+	float aresta, area;
+	System.out.print("informar a aresta do quadrado: ");
+        aresta = ler.nextFloat();
+        area = aresta*aresta;
+	System.out.println("A area  do quadrado é: " + area);
+    }
+    
+}
+package tp01ex03java;
+import java.util.Scanner;
+
+public class TP01Ex03Java {
+
+    public static void main(String[] args) {
+         /*Luiz carlos mendes e Ketheleen Cristine*/
+        /*3.Calcular e exibir a área de um quadrado a partir 
+        do valor de sua diagonal que será digitado.*/ 
+        Scanner ler = new Scanner(System.in);
+        Float d, area;
+        System.out.print("digite o valor da diagonal: ");
+        d = ler.nextFloat();
+        area = (d*d)/2;
+        System.out.println("a area de um quadrado é: " +  area);
+    }
+    
+}
+package tp01ex04java;
+import java.util.Scanner;
+public class TP01EX04Java {
+    public static void main(String[] args) {
+         /*Luiz carlos mendes e Ketheleen Cristine*/
+        /*4.A partir dos valores da base e altura de um triângulo, 
+        calcular e exibir sua área.*/
+        Scanner ler = new Scanner(System.in);
+	float base,altura, area;
+	System.out.print("informar a base de um triangulo: ");
+        base = ler.nextFloat();
+        System.out.print("informar a altura de um triangulo: ");
+        altura = ler.nextFloat();
+        area = (base*altura)/2;
+        System.out.println("A area  do triangulo é: " + area);
+
+    }
+    
+}
+package tp01ex05java;
+import java.util.Scanner;
+public class TP01EX05Java {
+
+    public static void main(String[] args) {
+         /*Luiz carlos mendes e Ketheleen Cristine*/
+        /*5.Calcular e exibir o volume de uma esfera a partir do
+        valor de seu diâmetro que será digitado.*/
+        Scanner ler = new Scanner(System.in);
+	double  diametro, raio, volume;
+	System.out.print("digite o valor do diametro");
+        diametro = ler.nextDouble();
+        raio = diametro/2;
+        volume=(4*3.14*(raio*raio))/3;
+        System.out.print("o volume da esfera é:  " +  volume);
+    }
+    
+}
+package tp01ex06java;
+import java.util.Scanner;
+public class TP01EX06Java {
+    public static void main(String[] args) {
+        /*Luiz Carlos Mendes e Ketheleen Cristine*/
+        /*6.Calcular e exibir a média aritmética de 
+        quatro valores quaisquer que serão digitados.*/
+        Scanner ler = new Scanner(System.in);
+	float n1,n2,n3,n4,media;
+	System.out.print("Numero 1: ");
+        n1 = ler.nextFloat();
+        System.out.print("Numero 2: ");
+        n2 = ler.nextFloat();
+        System.out.print("Numero 3: ");
+        n3 = ler.nextFloat();
+        System.out.print("Numero 4: ");
+        n4 = ler.nextFloat();
+        media = (n1+n2+n3+n4)/4;
+	System.out.println("A media aritmetica é: " + media);
+    }
+    
+}
+package tp01ex07java;
+import java.util.Scanner;
+public class TP01Ex07Java {
+    public static void main(String[] args) {
+         /*Luiz Carlos Mendes e Ketheleen Cristine*/
+     /*7.Calcular e exibir a média geométrica de dois valores
+       quaisquer que serão digitados.*/
+        Scanner ler = new Scanner(System.in);
+	float n1,n2,media;
+	System.out.print("Numero 1: ");
+        n1 = ler.nextFloat();
+        System.out.print("Numero 2: ");
+        n2 = ler.nextFloat();
+        media = n1*n2;
+	System.out.println("A media Geométrica é = "+ Math.sqrt( media ));
+    }
+    
+}
+package tp01ex08java;
+import java.util.Scanner;
+public class TP01Ex08Java {
+    public static void main(String[] args) {
+         /*Luiz Carlos Mendes e Ketheleen Cristine*/
+       /*8.Sabendo que uma milha marítima equivale a um mil, oitocentos e 
+        cinquenta e dois metrose que um quilômetro possui mil metros,
+        fazer um programa para converter milhas marítimas em quilômetros.*/
+        Scanner ler = new Scanner(System.in);
+	double km, milhas;
+	System.out.print("Informe as milhas marítimas: ");
+        milhas = ler.nextFloat();
+        km = milhas * 1.852;
+        System.out.println("O valor das milhas em km é: " + km);
+    }
+    
+}
+package tp01ex09java;
+import java.util.Scanner;
+public class TP01Ex09Java {
+    public static void main(String[] args) {
+         /*Luiz Carlos Mendes e Ketheleen Cristine*/
+      /*9.Calcular e exibir a tensão de um determinado circuito eletrônico 
+        a partir dos valores da resistência e corrente elétrica que serão digitados.
+        Utilize a lei de Ohm.*/
+        Scanner ler = new Scanner(System.in);
+	double tensao, corrente, resistencia;
+        System.out.print("Digite o valor da corrente elétrica: ");
+        corrente = ler.nextFloat();
+        System.out.print("Digite o valor da resistência elétrica: ");
+        resistencia = ler.nextFloat();
+        tensao = corrente * resistencia;
+	System.out.println(" A tensão do circuito eletrônico é: " +tensao);
+    }
+    
+}package tp01ex10java;
+import java.util.Scanner;
+public class TP01Ex10Java {
+    public static void main(String[] args) {
+        /*Luiz Carlos Mendes e Ketheleen Cristine*/
+       /*10.Entrar via teclado com o valor de uma temperatura em graus Celsius, 
+        calcular e exibir sua temperatura equivalente em Fahrenheit.*/
+        Scanner ler = new Scanner(System.in);
+	double celsius, fahrenheit;
+        int n = 32;
+        System.out.print("Informe os graus em Celsius: ");
+        celsius = ler.nextFloat();
+        fahrenheit = (celsius * 1.8) + n;
+        System.out.println("O valor em fahrenheit é: " + fahrenheit);
+    }
+    
+}
+package tp01ex11java;
+import java.util.Scanner;
+public class TP01Ex11Java {
+    public static void main(String[] args) {
+         /*Luiz Carlos Mendes e Ketheleen Cristine*/
+        /*11.	A partir do diâmetro de um círculo que será digitado, 
+        calcular e exibir sua área.*/
+        Scanner ler = new Scanner(System.in);
+	double area, diametro, raio;
+	System.out.print("Informe o diâmetro do círculo: ");
+        diametro = ler.nextFloat();
+        raio = diametro / 2;
+        area = 3.14 * (raio * raio);
+        System.out.println("A área do círculo é: " + area);
+
+    }
+    
+}
+package tp01ex12java;
+import java.util.Scanner;
+public class TP01Ex12Java {
+    public static void main(String[] args) {
+         /*Luiz Carlos Mendes e Ketheleen Cristine*/
+       /*12.Calcular e exibir o volume de um cone a partir dos valores da altura 
+        e do raio da base que serão digitados.*/
+        Scanner ler = new Scanner(System.in);
+        double a, r, v;
+        System.out.print("Digite a altura do cone: ");
+        a = ler.nextFloat();
+        System.out.print("Digite o valor do raio da base do cone: ");
+        r = ler.nextFloat();
+        v = 3.14 * (r * r) * a;
+        System.out.println("O volume do cone é: " + v);
+
+    }
+    
+}
+package tp01ex13java;
+import java.util.Scanner;
+public class TP01Ex13Java {
+
+    public static void main(String[] args) {
+         /*Luiz Carlos Mendes e Ketheleen Cristine*/
+/*13.Calcular e exibir a velocidade final (em km/h) de um automóvel, a partir 
+    dos valores da velocidade inicial (em m/s),
+    da aceleração (m/s²) e do tempo de percurso (em s) que serão digitados.*/
+        Scanner ler = new Scanner(System.in);
+	double  a, v0, t, V;
+	System.out.print("Digite a aceleração do veículo");
+        a = ler.nextDouble();
+        System.out.print ("Digite a velocidade inicial do veículo");
+        v0 = ler.nextDouble();
+        System.out.print("Digite o tempo do percurso do veículo");
+        t = ler.nextDouble();
+        V = (v0 + a * t);
+        System.out.print("a velocidade final é: " +  V);
+
+    }
+    
+}
+package tp01ex14java;
+import java.util.Scanner;
+public class TP01Ex14Java {
+
+    public static void main(String[] args) {
+         /*Luiz Carlos Mendes e Ketheleen Cristine*/
+/*14.Calcular e exibir o volume livre de um ambiente que contém uma esfera
+        de raio “r” inscrita em um cubo perfeito de aresta “a”. Os valores
+        de “r “ e “a” serão digitados.*/
+        Scanner ler = new Scanner(System.in);
+	double  a,r,volume;
+	System.out.print("Digite o raio");
+        a = ler.nextDouble();
+        System.out.print ("Digite a aresta");
+        r = ler.nextDouble();
+        volume = ((a * a * a) - ((4/3) * 3.14 * (r*3)));
+        System.out.print("o volume final é: " + volume);
+
+    }
+    
+    
+    
+}
+package tp01ex15java;
+import java.util.Scanner;
+public class TP01Ex15Java {
+
+    public static void main(String[] args) {
+         /*Luiz Carlos Mendes e Ketheleen Cristine*/
+/*15.	Entrar via teclado com o valor da cotação do dólar e uma certa
+        quantidade de dólares. Calcular e exibir o valor correspondente
+        em Reais (R$).*/
+        Scanner ler = new Scanner(System.in);
+	double real, valor;
+	System.out.print("Informe o valor em dólar: ");
+        valor = ler.nextFloat();
+        real = valor *5.62;
+	System.out.println("O valor convertido em reais é: " + real);
+
+    }
+    
+}
+package tp01ex16java;
+import java.util.Scanner;
+public class TP01EX16Java {
+    public static void main(String[] args) {
+        /*Luiz Carlo mendes e Ketheleen Cristine*/
+        /*16. Entrar via teclado com o valor de um ângulo em graus, 
+        calcular e exibir as seguintes funções trigonométricas: seno,
+        cosseno, tangente e secante deste ângulo.
+        Lembre-se que uma função trigonométrica trabalha em radianos.*/
+        double r, se, co, ta, secante;
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Digite o valor do ângulo: ");
+        r = entrada.nextDouble();
+        r = (r * Math.PI) / 180;
+        se = Math.sin(r);
+        co = Math.cos(r);
+        ta = Math.tan(r);
+        secante = 1 / co;
+        System.out.print("O seno é: " + se);
+        System.out.print("O coseno é: " + co);
+        System.out.print("A tangente é: " + ta);
+        System.out.print("A secante é: " + secante);
+    }
+    
+}
+package tp01ex17java;
+import java.util.Scanner;
+public class TP01EX17Java {
+    public static void main(String[] args) {
+        /*Luiz Carlos Mendes e Ketheleen Cristine*/
+  /*17.Entrar via teclado com dois valores quaisquer “X” e “Y”. 
+        Calcular e exibir o cálculo XY (“X” elevado a “Y”). Pesquisar as
+        funções Exp e Ln.*/
+        Scanner ler = new Scanner(System.in);
+    	double x,y;
+    	System.out.print("Digite o valor de X: ");
+        x = ler.nextDouble();
+        System.out.print("Digite o valor de Y: ");
+        y = ler.nextDouble();
+        System.out.println("segue: " + Math.pow(x, y));
+    }
+    
+}
+package tp01ex18java;
+import java.util.Scanner;
+public class TP01EX18Java {
+    public static void main(String[] args) {
+        /*Luiz Carlos Mendes e Ketheleen Cristine*/
+        /*18.	Entrar via teclado com o valor de cinco produtos.
+        Após as entradas, digitar um valor referente ao pagamento 
+        da somatória destes valores. Calcular e exibir o troco que
+         deverá ser devolvido.*/
+        Scanner ler = new Scanner(System.in);
+	double p1,p2,p3,p4,p5, compra, pago, troco;
+        System.out.print("Produto 1: ");
+        p1 = ler.nextDouble();
+        System.out.print("Produto 2: ");
+        p2 = ler.nextDouble();
+        System.out.print("Produto 3: ");
+        p3 = ler.nextDouble();
+        System.out.print("Produto 4: ");
+        p4 = ler.nextDouble();
+        System.out.print("Produto 5: ");
+        p5 = ler.nextDouble();
+        compra = p1 + p2 + p3 + p4 + p5;
+        System.out.print("Informe o valor pago: ");
+        pago = ler.nextDouble();
+        troco = pago - compra;
+        System.out.print("O troco é: " +  troco);
+
+
+    }
+    
+}
